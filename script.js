@@ -106,20 +106,34 @@ console.log("Hi Loka");
 // }
 // add(3, 5) //here we wont get 8 we get 3 times -2 becoz all add funtions go up logic exicute then these exicute so we get same -2
 
-let heading = document.getElementsByTagName("h1")
-// console.log(heading);
-heading[2].innerText = "bbbyyyyyyyyyyyyyyyyyyyyyyy"
-//console.log(heading[2].innerText);
-let para = document.getElementById("para")
-//para.innerText="<b>bhai </b>"
-para.innerHTML = "<b>bhai</b>"
+// let heading = document.getElementsByTagName("h1")
+// // console.log(heading);
+// heading[2].innerText = "bbbyyyyyyyyyyyyyyyyyyyyyyy"
+// //console.log(heading[2].innerText);
+// let para = document.getElementById("para")
+// //para.innerText="<b>bhai </b>"
+// para.innerHTML = "<b>bhai</b>"
 
-let hola = document.getElementsByClassName("hola")
-hola[0].innerHTML = "booooo"
+// let hola = document.getElementsByClassName("hola")
+// hola[0].innerHTML = "booooo"
 
-const change = () => {
-    let display = document.getElementById('hello')
-    display.innerHTML = "Hii sis!!!!"
-    display.style.backgroundColor="red"
-    display.style.color="black"
+// const change = () => {
+//     let display = document.getElementById('hello')
+//     display.innerHTML = "Hii sis!!!!"
+//     display.style.backgroundColor="red"
+//     display.style.color="black"
+// }
+
+// function change() {
+//     document.getElementById("box").style.backgroundColor = "red";
+// }
+
+function change() {
+    let box = document.getElementById("box");
+
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
