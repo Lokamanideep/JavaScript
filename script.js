@@ -128,12 +128,26 @@ console.log("Hi Loka");
 //     document.getElementById("box").style.backgroundColor = "red";
 // }
 
-function change() {
-    let box = document.getElementById("box");
 
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
+// function change() {
+//     let box = document.getElementById("box");
 
-    box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+
+//     box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+// }
+
+let colorcode = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f']
+const change = () => {
+    let display = document.getElementById("box")
+    let randcolor = "#"
+    let color = document.getElementById("color")
+    for (let index = 0; index < 6; index++) {
+        let randNo = Math.floor(Math.random() * 16)
+        randcolor += colorcode[randNo]
+    }
+    color.innerHTML = randcolor
+    display.style.backgroundColor = randcolor
 }

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    min-height: 100vh;       
+    background-color: #c178ca7d; 
+}
+h1{
+    text-align:center;
+}
+button{
+    color: blue;
+}
+#error{
+    color:red;
+}
+.cont{
+    background: white;
+    width: 350px;
+    height: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
